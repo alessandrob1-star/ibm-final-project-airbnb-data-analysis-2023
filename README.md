@@ -58,12 +58,38 @@ The dependency ranges are not a lockfile and do not reproduce the original envir
 - **Queens** surprisingly shows the highest average listing price, followed by Bronx and Brooklyn.
 - Price differences across boroughs are relatively small, so this result should be interpreted with caution and may reflect dataset limitations rather than actual market pricing.
 - **Entire homes/apartments** are significantly more expensive than private and shared rooms.
-- Extremely strong positive correlation (**~0.99**) between `price` and `service_fee`.
+- Extremely strong positive correlation (**~0.99**) between `price` and `service_fee`. This is consistent with a fee calculated as a near-fixed percentage of price, which would generate the correlation mechanically. The notebook does not verify the fee formula; this should not be treated as an independent market insight or a causal pricing driver.
 - Listings are heavily concentrated in a few popular neighbourhoods (Williamsburg, Bedford-Stuyvesant, Harlem, etc.).
 - The dataset was relatively clean after preprocessing, with no extreme price outliers detected.
 
 ---
 
+
+## Selected charts
+
+These figures are extracted unchanged from the notebook's saved outputs. They
+show the existing analysis, not a new execution against the source dataset.
+
+### Price distribution by room type
+
+![Saved box plot of listing prices by room type](docs/figures/price-by-room-type.png)
+
+### Service fee and listing price
+
+![Saved scatter plot of service fee against listing price](docs/figures/price-service-fee.png)
+
+The near-linear relationship could arise from calculating the fee from the
+price. The formula is not established here, so this chart does not demonstrate
+an independent market effect.
+
+### Numerical correlations
+
+![Saved numerical correlation heatmap](docs/figures/numeric-correlations.png)
+
+These are descriptive associations in the processed dataset. They do not
+establish causation or demonstrate that the sample represents current NYC prices.
+
+---
 
 ## 📜 Certification
 
