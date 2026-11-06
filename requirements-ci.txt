@@ -1,0 +1,2 @@
+# Notebook schema validation, separate from analysis dependencies.
+nbformat==5.10.4
