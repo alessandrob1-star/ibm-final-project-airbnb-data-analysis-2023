@@ -101,6 +101,16 @@ establish causation or demonstrate that the sample represents current NYC prices
 
 ---
 
+## License
+
+The author's original code, notebook, and written analysis are licensed under
+the [MIT License](LICENSE). External datasets and the IBM certificate
+(`certificate.png`), including third-party names, logos, and trademarks, are
+excluded from this grant and remain subject to their respective owners' terms.
+No external dataset is bundled with this repository.
+
+---
+
 ## 👤 Author
 
 **Alessandro Benevelli**
