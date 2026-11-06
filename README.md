@@ -33,6 +33,26 @@ This project presents a complete **Exploratory Data Analysis (EDA)** of the Airb
 
 ---
 
+## Reproducing the notebook
+
+The saved notebook was created with Python 3.12. Install the analysis and notebook dependencies:
+
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m notebook
+```
+
+Open `ibm-final-project-airbnb-data-analysis.ipynb`. The input CSV is not included
+in this repository. Supply `Airbnb_Open_Data.csv` from the dataset used for the
+project and change `data_path` in the first code cell to your local file path
+before running all cells. The saved outputs can be inspected without the CSV.
+The dependency ranges are not a lockfile and do not reproduce the original environment exactly.
+
+---
+
 ## 📈 Key Insights
 
 - **Queens** surprisingly shows the highest average listing price, followed by Bronx and Brooklyn.
